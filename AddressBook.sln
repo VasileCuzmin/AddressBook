@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{ABCDBA9B-BAB5-4B28-A5AB-120F1BE3585E}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		dependencies.props = dependencies.props
+		Directory.Build.props = Directory.Build.props
+		NuGet.config = NuGet.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BA986825-25F1-4B68-8CAE-6F8EDD15BD23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Api", "src\AddressBook.Api\AddressBook.Api.csproj", "{602723A3-E087-4D41-A690-07400399EB5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Data", "src\AddressBook.Data\AddressBook.Data.csproj", "{46D0EDE5-E0C5-4703-BD31-7D0AE1D07E89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Migrations", "src\AddressBook.Migrations\AddressBook.Migrations.csproj", "{E7EFBE13-D429-48C6-B5B7-2202041A1361}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unittests", "unittests", "{F4F2ADD2-F12A-47D8-80D7-BE4B595BA8B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integrationtests", "integrationtests", "{E8B5CA7A-2898-4D5E-8D69-6C7D45A3185A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{602723A3-E087-4D41-A690-07400399EB5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602723A3-E087-4D41-A690-07400399EB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602723A3-E087-4D41-A690-07400399EB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602723A3-E087-4D41-A690-07400399EB5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D0EDE5-E0C5-4703-BD31-7D0AE1D07E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D0EDE5-E0C5-4703-BD31-7D0AE1D07E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D0EDE5-E0C5-4703-BD31-7D0AE1D07E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D0EDE5-E0C5-4703-BD31-7D0AE1D07E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7EFBE13-D429-48C6-B5B7-2202041A1361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7EFBE13-D429-48C6-B5B7-2202041A1361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7EFBE13-D429-48C6-B5B7-2202041A1361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7EFBE13-D429-48C6-B5B7-2202041A1361}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4F2ADD2-F12A-47D8-80D7-BE4B595BA8B5} = {BA986825-25F1-4B68-8CAE-6F8EDD15BD23}
+		{E8B5CA7A-2898-4D5E-8D69-6C7D45A3185A} = {BA986825-25F1-4B68-8CAE-6F8EDD15BD23}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0402B9AD-D744-468A-8D31-602A87B885DF}
+	EndGlobalSection
+EndGlobal

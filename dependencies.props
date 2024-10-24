@@ -1,0 +1,12 @@
+﻿<Project>
+  <PropertyGroup Label="Package Versions">
+    <MoqPackageVersion>4.16.1</MoqPackageVersion>
+    <XunitPackageVersion>2.4.1</XunitPackageVersion>
+    <XunitRunnerVisualStudioPackageVersion>2.4.3</XunitRunnerVisualStudioPackageVersion>
+    <CoverletCollectorPackageVersion>3.1.0</CoverletCollectorPackageVersion>
+    <MicrosoftNetTestSdkPackageVersion>17.0.0</MicrosoftNetTestSdkPackageVersion>
+    <FluentAssertionsPackageVersion>6.12.0</FluentAssertionsPackageVersion>
+    <MicrosoftEntityFrameworkPackagesVersion>7.0.0</MicrosoftEntityFrameworkPackagesVersion>
+    <MicrosoftCSharpPackageVersion>4.7.0</MicrosoftCSharpPackageVersion>
+  </PropertyGroup>
+</Project>
