@@ -15,15 +15,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BA986825-25F1-4B68-8CAE-6F8EDD15BD23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Api", "src\AddressBook.Api\AddressBook.Api.csproj", "{602723A3-E087-4D41-A690-07400399EB5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBook.Api", "src\AddressBook.Api\AddressBook.Api.csproj", "{602723A3-E087-4D41-A690-07400399EB5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Data", "src\AddressBook.Data\AddressBook.Data.csproj", "{46D0EDE5-E0C5-4703-BD31-7D0AE1D07E89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBook.Data", "src\AddressBook.Data\AddressBook.Data.csproj", "{46D0EDE5-E0C5-4703-BD31-7D0AE1D07E89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Migrations", "src\AddressBook.Migrations\AddressBook.Migrations.csproj", "{E7EFBE13-D429-48C6-B5B7-2202041A1361}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressBook.Migrations", "src\AddressBook.Migrations\AddressBook.Migrations.csproj", "{E7EFBE13-D429-48C6-B5B7-2202041A1361}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unittests", "unittests", "{F4F2ADD2-F12A-47D8-80D7-BE4B595BA8B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "integrationtests", "integrationtests", "{E8B5CA7A-2898-4D5E-8D69-6C7D45A3185A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Application", "src\AddressBook.Application\AddressBook.Application.csproj", "{C6B72369-D9AE-493A-BF30-B5C1BF5E2AA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Domain", "src\AddressBook.Domain\AddressBook.Domain.csproj", "{B06966EB-3BB0-4147-86E1-F7C044CD064C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +47,14 @@ Global
 		{E7EFBE13-D429-48C6-B5B7-2202041A1361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7EFBE13-D429-48C6-B5B7-2202041A1361}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7EFBE13-D429-48C6-B5B7-2202041A1361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B72369-D9AE-493A-BF30-B5C1BF5E2AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B72369-D9AE-493A-BF30-B5C1BF5E2AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B72369-D9AE-493A-BF30-B5C1BF5E2AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B72369-D9AE-493A-BF30-B5C1BF5E2AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B06966EB-3BB0-4147-86E1-F7C044CD064C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B06966EB-3BB0-4147-86E1-F7C044CD064C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B06966EB-3BB0-4147-86E1-F7C044CD064C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B06966EB-3BB0-4147-86E1-F7C044CD064C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

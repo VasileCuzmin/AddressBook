@@ -1,12 +1,29 @@
 ﻿<Project>
-  <PropertyGroup Label="Package Versions">
-    <MoqPackageVersion>4.16.1</MoqPackageVersion>
-    <XunitPackageVersion>2.4.1</XunitPackageVersion>
-    <XunitRunnerVisualStudioPackageVersion>2.4.3</XunitRunnerVisualStudioPackageVersion>
-    <CoverletCollectorPackageVersion>3.1.0</CoverletCollectorPackageVersion>
-    <MicrosoftNetTestSdkPackageVersion>17.0.0</MicrosoftNetTestSdkPackageVersion>
-    <FluentAssertionsPackageVersion>6.12.0</FluentAssertionsPackageVersion>
-    <MicrosoftEntityFrameworkPackagesVersion>7.0.0</MicrosoftEntityFrameworkPackagesVersion>
-    <MicrosoftCSharpPackageVersion>4.7.0</MicrosoftCSharpPackageVersion>
-  </PropertyGroup>
+	<PropertyGroup Label="Package Versions">
+		<MoqPackageVersion>4.16.1</MoqPackageVersion>
+		<XunitPackageVersion>2.4.1</XunitPackageVersion>
+		<XunitRunnerVisualStudioPackageVersion>2.4.3</XunitRunnerVisualStudioPackageVersion>
+		<CoverletCollectorPackageVersion>3.1.0</CoverletCollectorPackageVersion>
+		<MicrosoftNetTestSdkPackageVersion>17.0.0</MicrosoftNetTestSdkPackageVersion>
+		<FluentAssertionsPackageVersion>6.12.0</FluentAssertionsPackageVersion>
+		<MicrosoftEntityFrameworkPackagesVersion>6.0.0</MicrosoftEntityFrameworkPackagesVersion>
+		<MicrosoftCSharpPackageVersion>4.7.0</MicrosoftCSharpPackageVersion>
+		<MediatRPackageVersion>9.0.0</MediatRPackageVersion>
+		<NBBPackagesVersion>6.0.0</NBBPackagesVersion>
+		<NBBExtrasPackagesVersion>4.3.3</NBBExtrasPackagesVersion>
+		<NewtonsoftJsonPackageVersion>12.0.3</NewtonsoftJsonPackageVersion>
+		<AutoMapperPackageVersion>11.0.0</AutoMapperPackageVersion>
+		<ScrutorPackageVersion>3.3.0</ScrutorPackageVersion>
+		<SerilogPackageVersion>2.10.0</SerilogPackageVersion>
+		<SerilogExtensionsLoggingPackageVersion>3.1.0</SerilogExtensionsLoggingPackageVersion>
+		<SerilogSinksMSSqlServerPackageVersion>5.6.1</SerilogSinksMSSqlServerPackageVersion>
+		<SerilogSinksConsolePackageVersion>4.0.1</SerilogSinksConsolePackageVersion>
+		<SerilogAspNetCorePackageVersion>4.1.0</SerilogAspNetCorePackageVersion>
+		<OpenTracingContribPackageVersion>0.8.0</OpenTracingContribPackageVersion>
+		<JaegerPackageVersion>1.0.3</JaegerPackageVersion>
+		<HellangMiddlewareProblemDetailsPackageVersion>5.1.1</HellangMiddlewareProblemDetailsPackageVersion>
+		<AutoMapperExtensionsPackageVersion>11.0.0</AutoMapperExtensionsPackageVersion>
+		<FluentValidationPackageVersion>9.5.2</FluentValidationPackageVersion>
+		<MicrosoftExtensionsPackagesVersion>6.0.0</MicrosoftExtensionsPackagesVersion>
+	</PropertyGroup>
 </Project>

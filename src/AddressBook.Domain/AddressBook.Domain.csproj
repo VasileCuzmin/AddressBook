@@ -17,7 +17,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\AddressBook.Domain\AddressBook.Domain.csproj" />
+		<PackageReference Include="NBB.Data.Abstractions" Version="$(NBBPackagesVersion)" />
 	</ItemGroup>
 
 </Project>

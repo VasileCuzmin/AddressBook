@@ -1,8 +1,6 @@
-﻿using AddressBook.Api.Models;
-using AddressBook.Api.Services;
+﻿using AddressBook.Application.Queries;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace AddressBook.Api.Controllers;
 
@@ -10,30 +8,24 @@ namespace AddressBook.Api.Controllers;
 [ApiController]
 public class ContactsController : ControllerBase
 {
-    private readonly IContactService _contactService;
-
-    public ContactsController(IContactService contactService)
+    private readonly IMediator _mediator;
+    public ContactsController(IMediator mediator)
     {
-        _contactService = contactService;
+        _mediator = mediator;
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Contact>> Get()
+    public async Task<IActionResult> Get([FromQuery] GetContacts.Query query)
     {
-        var contacts = _contactService.GetContacts();
-        return Ok(contacts);
+        var result = await _mediator.Send(query);
+        return Ok(result);
     }
 
     [HttpGet("{id}")]
-    public ActionResult<Contact> GetContactById(Guid id)
+    public async Task<IActionResult> GetContactById([FromQuery]GetContactById.Query query)
     {
-        var contact = _contactService.GetContact(id);
-        if (contact is null)
-        {
-            return NotFound();
-        }
-
-        return Ok(contact);
+        var result = await _mediator.Send(query);
+        return Ok(result);
     }
 
     [HttpPost]

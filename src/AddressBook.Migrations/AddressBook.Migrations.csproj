@@ -1,10 +1,49 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Internal\SqlScripts\EnsureMigrationsTable.sql" />
+		<None Remove="Internal\SqlScripts\GetScriptsVersion.sql" />
+		<None Remove="Internal\SqlScripts\UpdateScriptsVersion.sql" />
+		<None Remove="SqlScripts\001.Initial.sql" />
+		<None Remove="SqlScripts\002.Seeding.sql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Internal\SqlScripts\EnsureMigrationsTable.sql" />
+		<EmbeddedResource Include="Internal\SqlScripts\GetScriptsVersion.sql" />
+		<EmbeddedResource Include="Internal\SqlScripts\UpdateScriptsVersion.sql" />
+		<EmbeddedResource Include="SqlScripts\002.Seeding.sql" />
+		<EmbeddedResource Include="SqlScripts\001.Initial.sql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="$(MicrosoftExtensionsPackagesVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="$(MicrosoftExtensionsPackagesVersion)" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+		<PackageReference Include="NBB.EventStore.AdoNet.Migrations" Version="$(NBBPackagesVersion)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="Microsoft.ApplicationBlocks.Data">
+			<HintPath>..\_ExternalResources\Subtext.Scripting\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+		</Reference>
+		<Reference Include="Subtext.Scripting">
+			<HintPath>..\_ExternalResources\Subtext.Scripting\Subtext.Scripting.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="appsettings.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
 
 </Project>
