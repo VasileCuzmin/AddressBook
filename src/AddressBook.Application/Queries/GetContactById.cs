@@ -22,8 +22,8 @@ public class GetContactById
 
         public async Task<Contact> Handle(Query request, CancellationToken cancellationToken)
         {
-            var application = await _repository.GetByIdAsync(request.Id, cancellationToken);
-            return application;
+            var contact = await _repository.GetByIdAsync(request.Id, cancellationToken);
+            return contact;
         }
     }
 }

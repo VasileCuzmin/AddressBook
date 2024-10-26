@@ -10,6 +10,6 @@ public class MappingProfile : Profile
     public MappingProfile()
     {
         //CreateMap<CreateContact.Command, Contact>();
-        CreateMap<Contact, GetContacts.Query>();
+        CreateMap<Contact, GetContacts.Model>();
     }
 }
