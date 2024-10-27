@@ -10,7 +10,7 @@ namespace AddressBook.Data.Repositories;
 
 public class ContactsRepository : EfCrudRepository<Contact, ContactsDbContext>, IContactsRepository
 {
-    private readonly ContactsDbContext _dbContext;
+    public readonly ContactsDbContext _dbContext;
 
     public ContactsRepository(ContactsDbContext c, IExpressionBuilder expressionBuilder, IUow<Contact> uow, ILogger<EfCrudRepository<Contact, ContactsDbContext>> logger, ContactsDbContext dbContext)
         : base(c, expressionBuilder, uow, logger)

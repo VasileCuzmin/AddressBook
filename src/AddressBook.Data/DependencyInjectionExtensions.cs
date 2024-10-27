@@ -20,7 +20,8 @@ public static class DependencyInjectionExtensions
         if (useTestDoubles)
         {
             services
-                .AddDbContextPool<ContactsDbContext>(options => options.UseInMemoryDatabase("ContactTests"));
+                .AddDbContextPool<ContactsDbContext>(
+                    options => options.UseInMemoryDatabase("AddressBook_Tests"));
         }
         else
         {
@@ -29,7 +30,7 @@ public static class DependencyInjectionExtensions
                     (serviceProvider, options) =>
                     {
                         var configuration = serviceProvider.GetService<IConfiguration>();
-                        var connectionString = configuration.GetConnectionString("AddresBook_Database");
+                        string? connectionString = configuration.GetConnectionString("AddressBook_Database");
 
                         options
                             .UseSqlServer(connectionString, builder => { builder.EnableRetryOnFailure(3); })

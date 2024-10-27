@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Application", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Domain", "src\AddressBook.Domain\AddressBook.Domain.csproj", "{B06966EB-3BB0-4147-86E1-F7C044CD064C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressBook.Application.IntegrationTests", "tests\IntegrationTests\AddressBook.Application.IntegrationTests\AddressBook.Application.IntegrationTests.csproj", "{9F9BD34C-298D-44EA-AC9E-F641EB963E87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{B06966EB-3BB0-4147-86E1-F7C044CD064C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B06966EB-3BB0-4147-86E1-F7C044CD064C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B06966EB-3BB0-4147-86E1-F7C044CD064C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F9BD34C-298D-44EA-AC9E-F641EB963E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F9BD34C-298D-44EA-AC9E-F641EB963E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F9BD34C-298D-44EA-AC9E-F641EB963E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F9BD34C-298D-44EA-AC9E-F641EB963E87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F4F2ADD2-F12A-47D8-80D7-BE4B595BA8B5} = {BA986825-25F1-4B68-8CAE-6F8EDD15BD23}
 		{E8B5CA7A-2898-4D5E-8D69-6C7D45A3185A} = {BA986825-25F1-4B68-8CAE-6F8EDD15BD23}
+		{9F9BD34C-298D-44EA-AC9E-F641EB963E87} = {E8B5CA7A-2898-4D5E-8D69-6C7D45A3185A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0402B9AD-D744-468A-8D31-602A87B885DF}
